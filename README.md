@@ -36,12 +36,10 @@ password: password
 ## Instalasi
 
 ```bash
-composer install
-npm install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate:fresh --seed
-npm run dev
+php artisan view:clear
+php artisan route:clear
+php artisan config:clear
+npm run dev 
 php artisan serve
 ```
 
